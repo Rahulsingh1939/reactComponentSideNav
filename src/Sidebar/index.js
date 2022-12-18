@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import logo from "../assets/logo.svg";
 import Home from "../assets/home-solid.svg";
 import Team from "../assets/social.svg";
-import Calender from "../assets/sceduled.svg";
-import Projects from "../assets/starred.svg";
+import Events from "../assets/sceduled.svg";
+import Journey from "../assets/starred.svg";
 import Documents from "../assets/draft.svg";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
@@ -163,18 +163,18 @@ const Sidebar = () => {
           <Item
             onClick={() => setClick(false)}
             activeClassName="active"
-            to="/team"
+            to="/journey"
           >
-            <img src={Team} alt="Team" />
-            <Text clicked={click}>Team</Text>
+            <img src={Journey} alt="Our Journey" />
+            <Text clicked={click}>Our Journey</Text>
           </Item>
           <Item
             onClick={() => setClick(false)}
             activeClassName="active"
-            to="/calender"
+            to="/events"
           >
-            <img src={Calender} alt="Calender" />
-            <Text clicked={click}>Calender</Text>
+            <img src={Events} alt="Events" />
+            <Text clicked={click}>Events</Text>
           </Item>
           <Item
             onClick={() => setClick(false)}
@@ -187,11 +187,12 @@ const Sidebar = () => {
           <Item
             onClick={() => setClick(false)}
             activeClassName="active"
-            to="/projects"
+            to="/team"
           >
-            <img src={Projects} alt="Projects" />
-            <Text clicked={click}>Projects</Text>
+            <img src={Team} alt="Team" />
+            <Text clicked={click}>Team</Text>
           </Item>
+          
         </SlickBar>
       </SidebarContainer>
     </Container>

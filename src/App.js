@@ -2,9 +2,9 @@ import { Route, Switch, useLocation } from "react-router";
 import Sidebar from "./Sidebar";
 import Home from "./Pages/Home";
 import Team from "./Pages/Team";
-import Calender from "./Pages/Calender";
+import Events from "./Pages/Events";
 import Documents from "./Pages/Documents";
-import Projects from "./Pages/Projects";
+import Journey from "./Pages/Journey";
 import styled from "styled-components";
 import { AnimatePresence } from "framer-motion";
 
@@ -33,9 +33,9 @@ function App() {
           <Switch location={location} key={location.pathname}>
             <Route exact path="/" component={Home} />
             <Route path="/team" component={Team} />
-            <Route path="/calender" component={Calender} />
+            <Route path="/events" component={Events} />
             <Route path="/documents" component={Documents} />
-            <Route path="/projects" component={Projects} />
+            <Route path="/journey" component={Journey} />
           </Switch>
         </AnimatePresence>
       </Pages>
