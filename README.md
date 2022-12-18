@@ -1,1 +1,1 @@
-This is A simple React Component for SIde NAvigation BAr
+Sidebar in ReactJS.
